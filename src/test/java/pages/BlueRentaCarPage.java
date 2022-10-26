@@ -22,7 +22,6 @@ public class BlueRentaCarPage {
 
     @FindBy(xpath = "//*[@class='btn btn-primary']")
     public WebElement login;
-
     @FindBy (xpath = "//*[@id='dropdown-basic-button']")
     public WebElement basariliGiris;
 

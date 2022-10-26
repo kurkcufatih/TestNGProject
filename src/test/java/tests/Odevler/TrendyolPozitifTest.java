@@ -2,13 +2,14 @@ package tests.Odevler;
 
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
+import org.testng.ITestListener;
 import org.testng.annotations.Test;
 import pages.TrendyolPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
 
-public class TrendyolPozitifTest {
+public class TrendyolPozitifTest implements ITestListener {
     @Test
     public void test01() throws InterruptedException {
 
