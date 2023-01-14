@@ -6,7 +6,7 @@ import utilities.TestBaseBeforeMethodAfterMethod;
 public class C01_DependsOnMethods extends TestBaseBeforeMethodAfterMethod {
     @Test //default olarak priorty'si sifir oldugundan dolayi test04'un priotity'si once olsun diye -1 verdik.
     public void test01() {
-        driver.get("https://wamazon1.com");
+        driver.get("https://amazon.com");
     }
 
     @Test (dependsOnMethods = "test01")

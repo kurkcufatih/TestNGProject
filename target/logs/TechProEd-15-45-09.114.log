@@ -1,0 +1,3 @@
+2023-01-12 15:45:09,102 INFO t.d.C01_ScreenshotReusableMethod [main] Hepsiburada sitesine gidilir
+2023-01-12 15:45:33,278 INFO t.d.C01_ScreenshotReusableMethod [main] Ekran goruntusu alinir
+2023-01-12 15:45:34,211 WARN t.d.C01_ScreenshotReusableMethod [main] driver kapatilir

@@ -1,4 +1,4 @@
-package utilities;
+package tests.Tekrar.utils;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -8,22 +8,19 @@ import org.testng.annotations.BeforeClass;
 
 import java.time.Duration;
 
-public abstract class TestBaseBeforeClassAfterClass {
+public class TestBase_BeforeClass_AfterClass {
     protected WebDriver driver;
 
-    /*
-    @BeforeClass ve @AfterClass notasyonlarini TestNG'de
-    kullanirken JUnitteki gibi static yapmaya gerek yok.
-     */
-    @BeforeClass (groups = "group 1")
+    @BeforeClass
     public void setUp() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
     }
-    @AfterClass (groups = "group 1")
+
+    @AfterClass
     public void tearDown() {
-        //driver.quit();
+        driver.quit();
     }
 }

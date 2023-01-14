@@ -1,4 +1,4 @@
-package tests;
+package SeleniumGrid;
 
 import org.testng.Assert;
 import org.testng.SkipException;

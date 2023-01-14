@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="istenen methodlar">
+    <test name="method">
+        <classes>
+            <class name="tests.Tekrar.Part1.C03_Priority">
+                <methods>
+                    <include name="bestBuy"/>
+                </methods>
+            </class>
+            <class name="tests.Tekrar.utils.TestBase_BeforeClass_AfterClass">
+                <methods>
+                    <exclude name="amazonTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
